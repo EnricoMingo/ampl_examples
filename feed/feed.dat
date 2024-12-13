@@ -1,0 +1,24 @@
+set M := barley oats sugar peanut;
+
+param c:=
+barley 0.24
+oats 0.3
+sugar 0.4
+peanut 0.5
+;
+
+param p :=
+barley 12 
+oats 12
+sugar 40 
+peanut 60
+;
+
+param f :=
+barley 2
+oats 6
+sugar 12
+peanut 20
+;
+
+

@@ -1,0 +1,9 @@
+reset;
+
+model investment.mod;
+data investment.dat;
+option solver gurobi;
+solve;
+
+display x;
+display budget_constraint.body;

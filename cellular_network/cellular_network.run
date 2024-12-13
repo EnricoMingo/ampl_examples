@@ -1,0 +1,10 @@
+reset;
+
+model cellular_network.mod;
+data ex1.5-instance-2.dat; #ex1.5-instance-reduced.dat;
+option solver gurobi;
+solve;
+
+display x;
+display y;
+display z;

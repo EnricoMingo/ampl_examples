@@ -1,0 +1,13 @@
+reset;
+
+model fuel.mod;
+data fuel.dat;
+option solver gurobi;
+solve;
+
+display x;
+display y;
+display profit;
+display barrels.body;
+display oils.body;
+

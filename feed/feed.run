@@ -1,0 +1,11 @@
+reset;
+
+model feed.mod;
+data feed.dat;
+option solver gurobi;
+solve;
+
+display x;
+display cost;
+display fat.body;
+display protein.body;

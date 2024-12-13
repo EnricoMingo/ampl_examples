@@ -1,0 +1,19 @@
+reset;
+
+model radiation.mod;
+data radiation.dat; #radiation2.dat;
+option solver gurobi;
+solve;
+
+display C;
+display rad;
+display minr;
+display r;
+display maxr;
+
+display x;
+
+display cost;
+display{i in CrC} sum{j in B} rad[i,j]*x[j];
+display{i in TC} sum{j in B} rad[i,j]*x[j];
+display{i in CeC} sum{j in B} rad[i,j]*x[j];

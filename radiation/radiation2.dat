@@ -1,0 +1,29 @@
+set B := Beam1 Beam2 Beam3;
+set HC := HCell1 HCell2;
+set TC := TCell1 TCell2;
+set CeC := CeCell1 CeCell2;
+set CrC := CrCell1 CrCell2;
+
+param rad: 
+			Beam1 Beam2 Beam3:=
+HCell1 		   0.1	0.2   0.3
+HCell2 		   0.4	0.5   0.6
+TCell1 		   0.1  0.1   0.1
+TCell2 		   0.1  0.1   0.1
+CeCell1        0.1  0.2   0.3
+CeCell2        0.4  0.5   0.6
+CrCell1        0.0  0.0   0.1
+CrCell2        0.0  0.0   0.2
+;
+
+param minr:=
+CrCell1	0.1
+CrCell2	0.2;
+
+param r:=
+TCell1 0.3
+TCell2 0.3;
+
+param maxr:=
+CeCell1 0.6
+CeCell2 1.5;

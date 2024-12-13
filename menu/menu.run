@@ -1,0 +1,14 @@
+reset;
+
+model menu.mod;
+data menu.dat;
+option solver gurobi;
+solve;
+
+display x;
+display y;
+display calories.body;
+display sum{i in F} c[i]*x[i];
+display veg.body;
+
+

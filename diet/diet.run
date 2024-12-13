@@ -1,0 +1,10 @@
+reset;
+
+model diet.mod;
+data diet.dat;
+option solver gurobi;
+solve;
+
+display x;
+
+

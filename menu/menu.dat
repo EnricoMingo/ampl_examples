@@ -1,0 +1,23 @@
+set F := Spaghetti Rice Pork Mackerel Carrots Lettuce Apples;
+set V := Carrots Lettuce Apples;
+set C := Spaghetti Rice;
+
+param c:=
+Spaghetti 300
+Rice 250
+Pork 200
+Mackerel 180
+Carrots 70
+Lettuce 60
+Apples 100
+;
+
+param p:=
+Spaghetti 0.2
+Rice 0.5
+Pork 1.2
+Mackerel 0.8
+Carrots 0.1
+Lettuce 0.1
+Apples 0.2
+;
