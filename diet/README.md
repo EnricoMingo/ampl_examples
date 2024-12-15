@@ -1,7 +1,6 @@
-The diet problem
-----------------
+# The diet problem
 Consider the problem of determining the daily menu in a school canteen. The available types of food are described in the following table, 
-each with its nutritional characteristic and the cost ci per hectogram.
+each with its nutritional characteristics and the cost ci per hectogram.
 
 |             | Calories | Protein  | Fat      | Calcium  | Iron   | Fiber | cost  |
 | :---        |  :----:  | :----:   | :----:   | :----:   | :----: | :----:|  ---: |
@@ -27,3 +26,21 @@ of each nutrient. Formulate the problem as a Linear Programming problem.
 How does the solution change without the maximum amount of food limit?
 
 Write the model in AMPL and solve it using Gurobi.
+
+## Solution
+We can define the sets F and N, respectively the type of Food and the Nutritional characteristics.
+
+We define $A \in F \times N$ as the matrix containing the nutritional characteristics per food. 
+We also define $m \in N$ and $M \in N$ as the minimum and maximum amount of nutritionals that the diet should have. 
+Notice that $m$ default value is set to $0.0$, while for $M$ we consider as default value $1e^5$.
+
+We can define the variable $x \in F$ as the amount for each food. We consider as well a maximum amount per food as $F_{max} \in F$.
+
+We can then define the following LP problem:
+
+$$\mathbf{x}^* = \text{argmin} \ \sum_{i\in F} A_{i, cost} x_i$$
+$$\text{s.t.} \hspace{4cm}$$
+$$\sum_{i\in F} A_{i,j} x_i  \le  M_{j} \quad \forall j \in N $$
+$$\sum_{i\in F} A_{i,j} x_i  \ge  m_{j} \quad \forall j \in N $$
+$$ x_i  \ge  0.0 \quad \forall i \in F $$
+$$ x_i  \le  F_{max,i} \quad \forall i \in F $$
