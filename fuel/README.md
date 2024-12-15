@@ -36,8 +36,10 @@ $$ \mathbf{x}^* , \mathbf{y}^* = \text{argmax} \sum_{i \in F} p_i x_i - \sum_{i\
 
 $$\text{s.t.} \hspace{4cm}$$
 $$  \sum_{i \in F} y_{j,i} \leq b_{j} \quad \forall j \in R  $$
-$$  \sum_{j \in R} y_{j,i} \leq x_{i} \quad \forall i \in F  $$
+$$  \sum_{j \in R} y_{j,i} = x_{i} \quad \forall i \in F  $$
 $$  y_{2,A} \geq 0.2x_{A} $$
 $$  y_{3,A} \leq 0.3x_{A} $$
 $$  y_{3,B} \geq 0.4x_{B} $$
 $$  y_{2,C} \leq 0.5x_{C} $$
+$$  x_{i} \geq 0.0 \quad \forall i \in F$$
+$$  y_{j,i} \geq 0.0 \quad \forall i \in F, \ \forall j \in R $$
