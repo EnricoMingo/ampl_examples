@@ -27,4 +27,4 @@ $$\text{s.t.} \hspace{4cm}$$
 $$\sum_{i\in I} w_i x_i  \leq  C $$
 $$ x_i \in \langle 0, 1 \rangle \quad \forall i \in I$$
 
-Notice: if $x_i \geq 0.0$ is Real we are permitted to buy partial parts of the investments, while if $x_i \geq 0.0$ is Integer we are considering the investments to be boughtable more times. In the first case the BLP turns into a classical LP, in t he second case turns into a MILP (Mixed Integer Linear Program). 
+Notice: if $x_i \geq 0.0$ is Real we are permitted to buy partial parts of the investments, while if $x_i \geq 0.0$ is Integer we are considering the investments to be boughtable more times. In the first case the BLP turns into a classical LP, in the second case turns into a ILP (Integer Linear Program). 
