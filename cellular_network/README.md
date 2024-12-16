@@ -30,7 +30,9 @@ $$ y_{j} \in \langle 0, 1 \rangle \ \forall j \in S$$
 Notice that the second constraint is used to impose that at most 1 antenna $j$ is given to a client $i$, while the third constraint associates
 the antenna location to the client:
 
-$$ \text{if} \ y_{j} = 1, \ \text{then} \ x_{i,j} = 1, \ \text{else} \ x_{i,j} = 0$$
+$$ \text{if} \ x_{i,a} = 1, \ \text{then} \ y_{a} = 1, \ \text{else} \ y_{a} = 0, \ \forall i \in C$$
+
+for a certain antenna $j = a$. 
 
 However, the problem written in this way is not linear, to make it linear we introduce the new variable $z$ and we rewrite the problem in the 
 following form:
