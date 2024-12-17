@@ -34,4 +34,8 @@ $$ x_i \leq My_i \ \forall i \in C \quad \quad \text{(\bf{Big-M constraint})}$$
 $$ \sum_{i \in C} y_i \leq 1. $$
 
 The **Big-M constraint** permits to associate each $y$ variable with the corresponding $x$ variable, allowing the $x$ variables to have 
-arbitrary values. For this reason, $M$ is usually choose big, for example $1e^4$.
+arbitrary values. For this reason, $M$ is usually chosen big, for example $1e^4$.
+
+Notice also that the second constraint can be written in terms of Vegetables:
+
+$$ \sum_{i in V} c_ix_i \geq \sum_{j \in F} 0.7c_jx_j $$
