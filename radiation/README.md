@@ -35,9 +35,9 @@ We can define the following LP problem:
 
 $$\mathbf{x}^* = \text{argmin} \ \sum_{i\in HC} \sum_{j \in B} rad_{i,j} x_j$$
 $$\text{s.t.} \hspace{4cm}$$
-$$\sum_{j\in B} rad_{i,j}x_j \leq minr_i \quad \forall i \in CrC $$
+$$\sum_{j\in B} rad_{i,j}x_j \leq maxr_i \quad \forall i \in CrC $$
 $$\sum_{j\in B} rad_{i,j}x_j = r_i \quad \forall i \in TC $$
-$$\sum_{j\in B} rad_{i,j}x_j \leq maxr_i \quad \forall i \in CeC $$
+$$\sum_{j\in B} rad_{i,j}x_j \geq minr_i \quad \forall i \in CeC $$
 $$ x_j \geq 0 \quad \forall j \in B$$
 
 The solution of this LP is:
