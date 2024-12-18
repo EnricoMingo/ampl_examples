@@ -11,9 +11,9 @@ var x{i in B} >= 0;
 
 param rad{C,B}; #constraints
 
-param minr{CrC};
+param minr{CeC};
 param r{TC};
-param maxr{CeC};
+param maxr{CrC};
 
 minimize cost: sum{i in HC, j in B} rad[i,j]*x[j];
 
