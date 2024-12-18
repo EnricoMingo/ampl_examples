@@ -38,4 +38,6 @@ arbitrary values. For this reason, $M$ is usually chosen big, for example $1e^4$
 
 Notice also that the second constraint can be written in terms of Vegetables:
 
-$$ \sum_{i \in V} c_ix_i \geq \sum_{j \in F} 0.7c_jx_j $$
+$$ \sum_{i \in V} c_ix_i \geq \sum_{j \in F} 0.3c_jx_j $$
+
+However, this will lead to finding another optimal solution.
