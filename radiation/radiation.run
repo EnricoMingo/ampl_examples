@@ -14,6 +14,6 @@ display maxr;
 display x;
 
 display cost;
-display{i in CrC} sum{j in B} rad[i,j]*x[j];
-display{i in TC} sum{j in B} rad[i,j]*x[j];
-display{i in CeC} sum{j in B} rad[i,j]*x[j];
+display lower.body;
+display equality.body;
+display upper.body;

@@ -17,13 +17,13 @@ CrCell2        0.0  0.0   0.2
 ;
 
 param minr:=
-CrCell1	0.1
-CrCell2	0.2;
+CeCell1	0.1
+CeCell2	0.2;
 
 param r:=
 TCell1 0.3
 TCell2 0.3;
 
 param maxr:=
-CeCell1 0.6
-CeCell2 1.5;
+CrCell1 0.6
+CrCell2 1.5;
