@@ -17,8 +17,8 @@ param maxr{CeC};
 
 minimize cost: sum{i in HC, j in B} rad[i,j]*x[j];
 
-s.t. lineq{i in CrC}: sum{j in B} rad[i,j]*x[j] <= minr[i];
+s.t. lineq{i in CrC}: sum{j in B} rad[i,j]*x[j] <= maxr[i];
 s.t. equality{i in TC}: sum{j in B} rad[i,j]*x[j] = r[i];
-s.t. uineq{i in CeC}: sum{j in B} rad[i,j]*x[j] >= maxr[i];
+s.t. uineq{i in CeC}: sum{j in B} rad[i,j]*x[j] >= minr[i];
 
 
